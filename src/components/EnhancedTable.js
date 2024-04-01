@@ -123,7 +123,6 @@ export default function EnhancedTable() {
       })
       .then((data) => {
         setItems(data.items);
-        console.log(data);
       })
       .catch((error) => {
         console.error(error);
@@ -197,7 +196,7 @@ export default function EnhancedTable() {
                 const labelId = `enhanced-table-checkbox-${index}`;
 
                 return (
-                  <TableRow hover tabIndex={-1} key={row.id}>
+                  <TableRow hover tabIndex={-1} key={row.name}>
                     <TableCell padding="checkbox"></TableCell>
                     <TableCell
                       component="th"
